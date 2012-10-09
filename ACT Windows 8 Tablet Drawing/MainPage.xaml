@@ -7,7 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+    	<Grid.Background>
+    		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    			<GradientStop Color="Black" Offset="1"/>
+    			<GradientStop Color="#FF0017FF" Offset="0.75"/>
+    		</LinearGradientBrush>
+    	</Grid.Background>
+    	<Button x:Name="Submit" Content="Submit" HorizontalAlignment="Left" Margin="1084,504,0,0" VerticalAlignment="Top" FontSize="26.667"/>
+    	<Image Margin="10,10,942,557" Source="Assets/actlogo-splash.png" Stretch="Fill"/>
+    	<TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="516,192,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="192" FontSize="16"/>
+    	<TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="516,256,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="192" FontSize="16"/>
+    	<TextBox x:Name="Phone" HorizontalAlignment="Left" Margin="516,320,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" Width="192" FontSize="16"/>
+    	<TextBox x:Name="Address1" HorizontalAlignment="Left" Margin="794,192,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="192" FontSize="16"/>
+    	<TextBox x:Name="Email" HorizontalAlignment="Left" Margin="516,384,0,0" TextWrapping="Wrap" Text="E-Mail" VerticalAlignment="Top" Width="192" FontSize="16"/>
+    	<TextBox x:Name="Address2" HorizontalAlignment="Left" Margin="794,256,0,0" TextWrapping="Wrap" Text="Address cont." VerticalAlignment="Top" Width="192" FontSize="16"/>
+    	<TextBox x:Name="City" HorizontalAlignment="Left" Margin="794,320,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" Width="192" FontSize="16"/>
+    	<TextBox x:Name="Zip" HorizontalAlignment="Left" Margin="897,384,0,0" TextWrapping="Wrap" Text="Zip Code" VerticalAlignment="Top" FontSize="16"/>
+    	<ComboBox x:Name="State" HorizontalAlignment="Left" Margin="794,384,0,0" VerticalAlignment="Top" SelectedIndex="-1" FontSize="16" Height="33">
+    		<ItemsControl Height="100" Width="100"/>
+    	</ComboBox>
 
     </Grid>
 </Page>
