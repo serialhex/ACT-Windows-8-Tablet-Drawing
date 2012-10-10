@@ -103,6 +103,7 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <Content Include="Assets\actlogo-150x150.png" />
     <Content Include="Assets\actlogo-30x30.png" />
+    <Content Include="Assets\actlogo-310x150.png" />
     <Content Include="Assets\actlogo-splash.png" />
   </ItemGroup>
   <ItemGroup>

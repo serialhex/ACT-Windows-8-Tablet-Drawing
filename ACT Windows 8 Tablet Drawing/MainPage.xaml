@@ -14,19 +14,85 @@
     			<GradientStop Color="#FF0017FF" Offset="0.75"/>
     		</LinearGradientBrush>
     	</Grid.Background>
-    	<Button x:Name="Submit" Content="Submit" HorizontalAlignment="Left" Margin="1084,504,0,0" VerticalAlignment="Top" FontSize="26.667"/>
-    	<Image Margin="10,10,942,557" Source="Assets/actlogo-splash.png" Stretch="Fill"/>
-    	<TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="516,192,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="192" FontSize="16"/>
-    	<TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="516,256,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="192" FontSize="16"/>
-    	<TextBox x:Name="Phone" HorizontalAlignment="Left" Margin="516,320,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" Width="192" FontSize="16"/>
-    	<TextBox x:Name="Address1" HorizontalAlignment="Left" Margin="794,192,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="192" FontSize="16"/>
-    	<TextBox x:Name="Email" HorizontalAlignment="Left" Margin="516,384,0,0" TextWrapping="Wrap" Text="E-Mail" VerticalAlignment="Top" Width="192" FontSize="16"/>
-    	<TextBox x:Name="Address2" HorizontalAlignment="Left" Margin="794,256,0,0" TextWrapping="Wrap" Text="Address cont." VerticalAlignment="Top" Width="192" FontSize="16"/>
-    	<TextBox x:Name="City" HorizontalAlignment="Left" Margin="794,320,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" Width="192" FontSize="16"/>
-    	<TextBox x:Name="Zip" HorizontalAlignment="Left" Margin="897,384,0,0" TextWrapping="Wrap" Text="Zip Code" VerticalAlignment="Top" FontSize="16"/>
-    	<ComboBox x:Name="State" HorizontalAlignment="Left" Margin="794,384,0,0" VerticalAlignment="Top" SelectedIndex="-1" FontSize="16" Height="33">
-    		<ItemsControl Height="100" Width="100"/>
-    	</ComboBox>
+    	<TextBlock HorizontalAlignment="Center" Margin="0,39,0,0" TextWrapping="Wrap" Text="Enter to win a Windows 8 notebook from ACT Computers!" VerticalAlignment="Top" FontSize="64" TextAlignment="Center" FontWeight="Bold"/>
+
+    	<Image Margin="109,266,947,352" Source="Assets/actlogo-310x150.png" Stretch="None" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left">
+    		<Image.RenderTransform>
+    			<CompositeTransform ScaleY="1.5" ScaleX="1.5"/>
+    		</Image.RenderTransform>
+    	</Image>
+        <TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="590,240,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="1"/>
+    	<TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="590,304,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="2"/>
+    	<TextBox x:Name="Phone" HorizontalAlignment="Left" Margin="590,368,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="3"/>
+    	<TextBox x:Name="Address1" HorizontalAlignment="Left" Margin="868,240,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="5"/>
+    	<TextBox x:Name="Email" HorizontalAlignment="Left" Margin="590,432,0,0" TextWrapping="Wrap" Text="E-Mail" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="4"/>
+    	<TextBox x:Name="Address2" HorizontalAlignment="Left" Margin="868,304,0,0" TextWrapping="Wrap" Text="Address cont." VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="6"/>
+    	<TextBox x:Name="City" HorizontalAlignment="Left" Margin="868,368,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="7"/>
+    	<TextBox x:Name="Zip" HorizontalAlignment="Left" Margin="971,432,0,0" TextWrapping="Wrap" Text="Zip Code" VerticalAlignment="Top" FontSize="26.667" Height="47" TabIndex="9"/>
+    	<ComboBox x:Name="State" HorizontalAlignment="Left" Margin="868,432,0,0" VerticalAlignment="Top" SelectedIndex="11" FontSize="26.667" Height="47" TabIndex="8">
+            <!-- this isn't a wtf; i'm just not sure of the magical way to do this
+                    ...and i sure as *HELL* did not type this by hand!-->
+            <ComboBoxItem x:Name="AL" Content="AL"/>
+            <ComboBoxItem x:Name="AK" Content="AK"/>
+            <ComboBoxItem x:Name="AS" Content="AS"/>
+            <ComboBoxItem x:Name="AZ" Content="AZ"/>
+            <ComboBoxItem x:Name="AR" Content="AR"/>
+            <ComboBoxItem x:Name="CA" Content="CA"/>
+            <ComboBoxItem x:Name="CO" Content="CO"/>
+            <ComboBoxItem x:Name="CT" Content="CT"/>
+            <ComboBoxItem x:Name="DE" Content="DE"/>
+            <ComboBoxItem x:Name="DC" Content="DC"/>
+            <ComboBoxItem x:Name="FM" Content="FM"/>
+            <ComboBoxItem x:Name="FL" Content="FL"/>
+            <ComboBoxItem x:Name="GA" Content="GA"/>
+            <ComboBoxItem x:Name="GU" Content="GU"/>
+            <ComboBoxItem x:Name="HI" Content="HI"/>
+            <ComboBoxItem x:Name="ID" Content="ID"/>
+            <ComboBoxItem x:Name="IL" Content="IL"/>
+            <ComboBoxItem x:Name="IN" Content="IN"/>
+            <ComboBoxItem x:Name="IA" Content="IA"/>
+            <ComboBoxItem x:Name="KS" Content="KS"/>
+            <ComboBoxItem x:Name="KY" Content="KY"/>
+            <ComboBoxItem x:Name="LA" Content="LA"/>
+            <ComboBoxItem x:Name="ME" Content="ME"/>
+            <ComboBoxItem x:Name="MH" Content="MH"/>
+            <ComboBoxItem x:Name="MD" Content="MD"/>
+            <ComboBoxItem x:Name="MA" Content="MA"/>
+            <ComboBoxItem x:Name="MI" Content="MI"/>
+            <ComboBoxItem x:Name="MN" Content="MN"/>
+            <ComboBoxItem x:Name="MS" Content="MS"/>
+            <ComboBoxItem x:Name="MO" Content="MO"/>
+            <ComboBoxItem x:Name="MT" Content="MT"/>
+            <ComboBoxItem x:Name="NE" Content="NE"/>
+            <ComboBoxItem x:Name="NV" Content="NV"/>
+            <ComboBoxItem x:Name="NH" Content="NH"/>
+            <ComboBoxItem x:Name="NJ" Content="NJ"/>
+            <ComboBoxItem x:Name="NM" Content="NM"/>
+            <ComboBoxItem x:Name="NY" Content="NY"/>
+            <ComboBoxItem x:Name="NC" Content="NC"/>
+            <ComboBoxItem x:Name="ND" Content="ND"/>
+            <ComboBoxItem x:Name="MP" Content="MP"/>
+            <ComboBoxItem x:Name="OH" Content="OH"/>
+            <ComboBoxItem x:Name="OK" Content="OK"/>
+            <ComboBoxItem x:Name="OR" Content="OR"/>
+            <ComboBoxItem x:Name="PW" Content="PW"/>
+            <ComboBoxItem x:Name="PA" Content="PA"/>
+            <ComboBoxItem x:Name="PR" Content="PR"/>
+            <ComboBoxItem x:Name="RI" Content="RI"/>
+            <ComboBoxItem x:Name="SC" Content="SC"/>
+            <ComboBoxItem x:Name="SD" Content="SD"/>
+            <ComboBoxItem x:Name="TN" Content="TN"/>
+            <ComboBoxItem x:Name="TX" Content="TX"/>
+            <ComboBoxItem x:Name="UT" Content="UT"/>
+            <ComboBoxItem x:Name="VT" Content="VT"/>
+            <ComboBoxItem x:Name="VA" Content="VA"/>
+            <ComboBoxItem x:Name="VI" Content="VI"/>
+            <ComboBoxItem x:Name="WA" Content="WA"/>
+            <ComboBoxItem x:Name="WV" Content="WV"/>
+            <ComboBoxItem x:Name="WI" Content="WI"/>
+            <ComboBoxItem x:Name="WY" Content="WY"/>
+        </ComboBox>
+        <Button Content="Submit" Margin="971,546,0,139" FontSize="48" Height="83"/>
 
     </Grid>
 </Page>

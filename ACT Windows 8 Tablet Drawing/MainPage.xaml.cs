@@ -34,5 +34,7 @@ namespace ACT_Windows_8_Tablet_Drawing
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
+
+
     }
 }
