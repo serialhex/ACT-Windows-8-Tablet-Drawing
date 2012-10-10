@@ -33,6 +33,8 @@ namespace ACT_Windows_8_Tablet_Drawing
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.ComboBox State; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.Button Submit; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.ComboBoxItem AL; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.ComboBoxItem AK; 
@@ -172,6 +174,7 @@ namespace ACT_Windows_8_Tablet_Drawing
             City = (global::Windows.UI.Xaml.Controls.TextBox)this.FindName("City");
             Zip = (global::Windows.UI.Xaml.Controls.TextBox)this.FindName("Zip");
             State = (global::Windows.UI.Xaml.Controls.ComboBox)this.FindName("State");
+            Submit = (global::Windows.UI.Xaml.Controls.Button)this.FindName("Submit");
             AL = (global::Windows.UI.Xaml.Controls.ComboBoxItem)this.FindName("AL");
             AK = (global::Windows.UI.Xaml.Controls.ComboBoxItem)this.FindName("AK");
             AS = (global::Windows.UI.Xaml.Controls.ComboBoxItem)this.FindName("AS");

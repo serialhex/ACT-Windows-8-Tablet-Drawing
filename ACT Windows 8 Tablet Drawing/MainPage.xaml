@@ -92,7 +92,7 @@
             <ComboBoxItem x:Name="WI" Content="WI"/>
             <ComboBoxItem x:Name="WY" Content="WY"/>
         </ComboBox>
-        <Button Content="Submit" Margin="971,546,0,139" FontSize="48" Height="83"/>
+        <Button x:Name="Submit" Content="Submit" Margin="971,546,0,139" FontSize="48" Height="83" Click="Button_Click"/>
 
     </Grid>
 </Page>

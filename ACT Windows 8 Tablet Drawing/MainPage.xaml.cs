@@ -35,6 +35,11 @@ namespace ACT_Windows_8_Tablet_Drawing
         {
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
 
     }
 }
