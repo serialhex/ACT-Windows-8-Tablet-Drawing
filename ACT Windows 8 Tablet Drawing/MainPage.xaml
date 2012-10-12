@@ -22,14 +22,14 @@
     		</Image.RenderTransform>
     	</Image>
         <TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="590,240,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="1"/>
-    	<TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="590,304,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="2"/>
-    	<TextBox x:Name="Phone" HorizontalAlignment="Left" Margin="590,368,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="3"/>
-    	<TextBox x:Name="Address1" HorizontalAlignment="Left" Margin="868,240,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="5"/>
-    	<TextBox x:Name="Email" HorizontalAlignment="Left" Margin="590,432,0,0" TextWrapping="Wrap" Text="E-Mail" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="4"/>
-    	<TextBox x:Name="Address2" HorizontalAlignment="Left" Margin="868,304,0,0" TextWrapping="Wrap" Text="Address cont." VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="6"/>
-    	<TextBox x:Name="City" HorizontalAlignment="Left" Margin="868,368,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="7"/>
-    	<TextBox x:Name="Zip" HorizontalAlignment="Left" Margin="971,432,0,0" TextWrapping="Wrap" Text="Zip Code" VerticalAlignment="Top" FontSize="26.667" Height="47" TabIndex="9"/>
-    	<ComboBox x:Name="State" HorizontalAlignment="Left" Margin="868,432,0,0" VerticalAlignment="Top" SelectedIndex="11" FontSize="26.667" Height="47" TabIndex="8">
+        <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="590,304,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
+        <TextBox x:Name="Phone" HorizontalAlignment="Left" Margin="590,368,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="590,432,0,0" TextWrapping="Wrap" Text="E-Mail" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
+        <TextBox x:Name="Address1" HorizontalAlignment="Left" Margin="868,240,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
+        <TextBox x:Name="Address2" HorizontalAlignment="Left" Margin="868,304,0,0" TextWrapping="Wrap" Text="Address cont." VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
+        <TextBox x:Name="City" HorizontalAlignment="Left" Margin="868,368,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
+        <TextBox x:Name="Zip" HorizontalAlignment="Left" Margin="971,432,0,0" TextWrapping="Wrap" Text="Zip Code" VerticalAlignment="Top" FontSize="26.667" Height="47" />
+        <ComboBox x:Name="State" HorizontalAlignment="Left" Margin="868,432,0,0" VerticalAlignment="Top" SelectedIndex="11" FontSize="26.667" Height="47">
             <!-- this isn't a wtf; i'm just not sure of the magical way to do this
                     ...and i sure as *HELL* did not type this by hand!-->
             <ComboBoxItem x:Name="AL" Content="AL"/>
@@ -93,6 +93,7 @@
             <ComboBoxItem x:Name="WY" Content="WY"/>
         </ComboBox>
         <Button x:Name="Submit" Content="Submit" Margin="971,546,0,139" FontSize="48" Height="83" Click="Button_Click"/>
+        <TextBlock x:Name="stupid_text" HorizontalAlignment="Left" Margin="10,443,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="30" Height="300" Width="580"/>
 
     </Grid>
 </Page>

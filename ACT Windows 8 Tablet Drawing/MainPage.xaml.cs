@@ -21,6 +21,8 @@ namespace ACT_Windows_8_Tablet_Drawing
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public PersonInfo info = new PersonInfo();
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -35,11 +37,17 @@ namespace ACT_Windows_8_Tablet_Drawing
         {
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+        private void Button_Click(object sender, RoutedEventArgs e) {
+            info.FirstName = FirstName.Text;
+            info.LastName = LastName.Text;
+            info.Phone = Phone.Text;
+            info.EMail = Email.Text;
+            info.Address1 = Address1.Text;
+            info.Address2 = Address2.Text;
+            info.City = City.Text;
+            info.State = State.SelectionBoxItem.ToString();
+            info.Zip = Zip.Text;
+            stupid_text.Text = info.ToString();
         }
-
-
     }
 }
