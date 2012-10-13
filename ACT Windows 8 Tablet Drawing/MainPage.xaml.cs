@@ -48,6 +48,7 @@ namespace ACT_Windows_8_Tablet_Drawing
             info.State = State.SelectionBoxItem.ToString();
             info.Zip = Zip.Text;
             stupid_text.Text = info.ToString();
+            info.writeFile();
         }
     }
 }
