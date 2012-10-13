@@ -17,7 +17,7 @@ namespace ACT_Windows_8_Tablet_Drawing {
                 return first_name;
             }
             set {
-                first_name = escape_string(value);
+                first_name = remove_semicolons(value);
             }
         }
 
@@ -27,7 +27,7 @@ namespace ACT_Windows_8_Tablet_Drawing {
                 return last_name;
             }
             set {
-                last_name = escape_string(value);
+                last_name = remove_semicolons(value);
             }
         }
 
@@ -37,7 +37,7 @@ namespace ACT_Windows_8_Tablet_Drawing {
                 return phone;
             }
             set {
-                phone = escape_string(value);
+                phone = remove_semicolons(value);
             }
         }
 
@@ -47,7 +47,7 @@ namespace ACT_Windows_8_Tablet_Drawing {
                 return email;
             }
             set {
-                email = escape_string(value);
+                email = remove_semicolons(value);
             }
         }
 
@@ -57,7 +57,7 @@ namespace ACT_Windows_8_Tablet_Drawing {
                 return address1;
             }
             set {
-                address1 = escape_string(value);
+                address1 = remove_semicolons(value);
             }
         }
 
@@ -67,7 +67,7 @@ namespace ACT_Windows_8_Tablet_Drawing {
                 return address2;
             }
             set {
-                address2 = escape_string(value);
+                address2 = remove_semicolons(value);
             }
         }
 
@@ -77,7 +77,7 @@ namespace ACT_Windows_8_Tablet_Drawing {
                 return city;
             }
             set {
-                city = escape_string(value);
+                city = remove_semicolons(value);
             }
         }
 
@@ -89,20 +89,19 @@ namespace ACT_Windows_8_Tablet_Drawing {
                 return zip;
             }
             set {
-                zip = escape_string(value);
+                zip = remove_semicolons(value);
             }
         }
 
-        private string escape_string(string clean_me) {
+        private string remove_semicolons(string clean_me) {
             string clean;
-            string[] words = Regex.Split(clean_me, @"\W+");
-            clean = string.Join(" ", words);
+            string[] words = Regex.Split(clean_me, @";");
+            clean = string.Join("", words);
             return clean;
         }
 
         public override string ToString() {
             string str = ToCSV();
-            str += "next line";
             return str;
         }
 
@@ -122,13 +121,13 @@ namespace ACT_Windows_8_Tablet_Drawing {
 
         // FFS THIS IS A PAIN!!!
         // err, was, until i figured out i needed to use the *WINDOWS 8* API's for file writing,
-        //    and not the *normal* api's for file writing!!!
+        //    and not the *normal* API's for file writing!!!
         async public void writeFile() {
-            StorageFolder localFolder = ApplicationData.Current.LocalFolder;
+            StorageFolder roamingFolder = ApplicationData.Current.RoamingFolder;
 
             string str = ToCSV();
 
-            StorageFile file = await localFolder.CreateFileAsync("databaser.dat", CreationCollisionOption.OpenIfExists);
+            StorageFile file = await roamingFolder.CreateFileAsync("databaser.dat", CreationCollisionOption.OpenIfExists);
             await FileIO.AppendTextAsync(file, str);
         }
     }

@@ -21,7 +21,18 @@ namespace ACT_Windows_8_Tablet_Drawing
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public PersonInfo info = new PersonInfo();
+        private PersonInfo info = new PersonInfo();
+        private void grep_info() {
+            info.FirstName = FirstName.Text;
+            info.LastName = LastName.Text;
+            info.Phone = Phone.Text;
+            info.EMail = Email.Text;
+            info.Address1 = Address1.Text;
+            info.Address2 = Address2.Text;
+            info.City = City.Text;
+            info.State = State.SelectionBoxItem.ToString();
+            info.Zip = Zip.Text;
+        }
 
         public MainPage()
         {
@@ -38,15 +49,7 @@ namespace ACT_Windows_8_Tablet_Drawing
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-            info.FirstName = FirstName.Text;
-            info.LastName = LastName.Text;
-            info.Phone = Phone.Text;
-            info.EMail = Email.Text;
-            info.Address1 = Address1.Text;
-            info.Address2 = Address2.Text;
-            info.City = City.Text;
-            info.State = State.SelectionBoxItem.ToString();
-            info.Zip = Zip.Text;
+            grep_info();
             stupid_text.Text = info.ToString();
             info.writeFile();
         }

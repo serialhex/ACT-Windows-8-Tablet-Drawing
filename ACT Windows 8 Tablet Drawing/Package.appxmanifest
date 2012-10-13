@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="39279cf8-cdee-46e1-8b83-31572228d66d" Publisher="CN=Justin" Version="1.0.0.0" />
+  <Identity Name="ACT-Windows-8-Tablet-Drawing" Publisher="CN=Justin" Version="1.0.0.0" />
   <Properties>
     <DisplayName>ACT Windows 8 Tablet Drawing</DisplayName>
     <PublisherDisplayName>Justin</PublisherDisplayName>

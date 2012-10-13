@@ -18,4 +18,6 @@ Let them know:
   
   thus, it is:
 	Data-Semicolon-Space-...-\n
-Semicolons that are put as part of the input will be \;-ed
+  
+	semicolons shall be removed!
+	...and they are...
