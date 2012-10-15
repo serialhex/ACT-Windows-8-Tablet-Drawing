@@ -19,8 +19,8 @@ namespace ACT_Windows_8_Tablet_Drawing
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
-    {
+    public sealed partial class MainPage : Page {
+        
         private PersonInfo info = new PersonInfo();
         private void grep_info() {
             info.FirstName = FirstName.Text;
@@ -44,14 +44,16 @@ namespace ACT_Windows_8_Tablet_Drawing
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.  The Parameter
         /// property is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
+        protected override void OnNavigatedTo(NavigationEventArgs e) {
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
             grep_info();
-            stupid_text.Text = info.ToString();
             info.writeFile();
+            // Add this code.
+            if (this.Frame != null) {
+                this.Frame.Navigate(typeof(ThankYou));
+            }
         }
     }
 }

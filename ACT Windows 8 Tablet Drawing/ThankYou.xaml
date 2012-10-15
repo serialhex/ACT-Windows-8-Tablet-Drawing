@@ -15,7 +15,7 @@
             </LinearGradientBrush>
         </Grid.Background>
     	<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" TextAlignment="Center">
-    		<Run Text="Thank you for entering to win a Windows 8 laptop fromACT Computers."/>
+    		<Run Text="Thank you for entering to win a Windows 8 laptop from ACT Computers."/>
     		<LineBreak/>
     		<Run/>
     		<LineBreak/>

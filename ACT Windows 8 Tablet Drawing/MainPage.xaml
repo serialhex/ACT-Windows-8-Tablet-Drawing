@@ -95,7 +95,6 @@
     		</ComboBox>
     	</Grid>
         <Button x:Name="Submit" Content="Submit" Margin="971,546,0,139" FontSize="48" Height="83" Click="Button_Click" TabIndex="1"/>
-        <TextBlock x:Name="stupid_text" HorizontalAlignment="Left" Margin="10,443,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="30" Height="300" Width="580"/>
 
     </Grid>
 </Page>

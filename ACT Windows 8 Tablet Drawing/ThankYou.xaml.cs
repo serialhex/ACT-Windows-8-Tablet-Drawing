@@ -28,7 +28,11 @@ namespace ACT_Windows_8_Tablet_Drawing {
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.  The Parameter
         /// property is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e) {
+        async protected override void OnNavigatedTo(NavigationEventArgs e) {
+            await System.Threading.Tasks.Task.Delay(5000);
+            if (this.Frame != null) {
+                this.Frame.Navigate(typeof(MainPage));
+            }
         }
     }
 }
