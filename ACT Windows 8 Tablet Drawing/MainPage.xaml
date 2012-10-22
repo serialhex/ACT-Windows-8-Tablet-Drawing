@@ -22,14 +22,14 @@
     		</Image.RenderTransform>
     	</Image>
     	<Grid x:Name="Data_Entry" Margin="590,240,263,289">
-    		<TextBox x:Name="FirstName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" TabIndex="1"/>
-    		<TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="0,64,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
-    		<TextBox x:Name="Phone" HorizontalAlignment="Left" Margin="0,128,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
-    		<TextBox x:Name="Email" HorizontalAlignment="Left" Margin="0,192,0,0" TextWrapping="Wrap" Text="E-Mail" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
-    		<TextBox x:Name="Address1" HorizontalAlignment="Left" Margin="278,0,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
-    		<TextBox x:Name="Address2" HorizontalAlignment="Left" Margin="278,64,0,0" TextWrapping="Wrap" Text="Address cont." VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
-    		<TextBox x:Name="City" HorizontalAlignment="Left" Margin="278,128,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" />
-    		<TextBox x:Name="Zip" HorizontalAlignment="Left" Margin="381,192,0,0" TextWrapping="Wrap" Text="Zip Code" VerticalAlignment="Top" FontSize="26.667" Height="47" />
+            <TextBox x:Name="FirstName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" GotFocus="FirstName_GotFocus_1"/>
+            <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="0,64,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" GotFocus="LastName_GotFocus_1"/>
+    		<TextBox x:Name="Phone" HorizontalAlignment="Left" Margin="0,128,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" GotFocus="Phone_GotFocus_1"/>
+    		<TextBox x:Name="Email" HorizontalAlignment="Left" Margin="0,192,0,0" TextWrapping="Wrap" Text="E-Mail" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" GotFocus="Email_GotFocus_1"/>
+    		<TextBox x:Name="Address1" HorizontalAlignment="Left" Margin="278,0,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" GotFocus="Address1_GotFocus_1"/>
+    		<TextBox x:Name="Address2" HorizontalAlignment="Left" Margin="278,64,0,0" TextWrapping="Wrap" Text="Address cont." VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" GotFocus="Address2_GotFocus_1"/>
+    		<TextBox x:Name="City" HorizontalAlignment="Left" Margin="278,128,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" FontSize="26.667" Width="235" Height="47" GotFocus="City_GotFocus_1"/>
+    		<TextBox x:Name="Zip" HorizontalAlignment="Left" Margin="381,192,0,0" TextWrapping="Wrap" Text="Zip Code" VerticalAlignment="Top" FontSize="26.667" Height="47" GotFocus="Zip_GotFocus_1"/>
     		<ComboBox x:Name="State" HorizontalAlignment="Left" Margin="278,192,0,0" VerticalAlignment="Top" SelectedIndex="11" FontSize="26.667" Height="47">
             <!-- this isn't a wtf; i'm just not sure of the magical way to do this
                     ...and i sure as *HELL* did not type this by hand!-->

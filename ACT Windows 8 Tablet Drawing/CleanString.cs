@@ -8,6 +8,8 @@ using System.Text.RegularExpressions;
 namespace ACT_Windows_8_Tablet_Drawing {
     class CleanString {
 
+        // yes i kinow, a hard-coded constant in a class that should be variable.
+        // i think this makes it easier, but whatev!
         private const string CleanChars = ";";
 
         private string self;

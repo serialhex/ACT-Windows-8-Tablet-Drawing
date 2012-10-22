@@ -55,5 +55,42 @@ namespace ACT_Windows_8_Tablet_Drawing
                 this.Frame.Navigate(typeof(ThankYou));
             }
         }
+
+        #region stupidland
+        // this is a WTF!  i tried making just one function that you could pass
+        // the object to and have it set the text property for........
+        //   this is fucking stupid!
+        private void FirstName_GotFocus_1(object sender, RoutedEventArgs e) {
+            FirstName.Text = "";
+        }
+
+        private void LastName_GotFocus_1(object sender, RoutedEventArgs e) {
+            LastName.Text = "";
+        }
+
+        private void Phone_GotFocus_1(object sender, RoutedEventArgs e) {
+            Phone.Text = "";
+        }
+
+        private void Email_GotFocus_1(object sender, RoutedEventArgs e) {
+            Email.Text = "";
+        }
+
+        private void Address1_GotFocus_1(object sender, RoutedEventArgs e) {
+            Address1.Text = "";
+        }
+
+        private void Address2_GotFocus_1(object sender, RoutedEventArgs e) {
+            Address2.Text = "";
+        }
+
+        private void City_GotFocus_1(object sender, RoutedEventArgs e) {
+            City.Text = "";
+        }
+
+        private void Zip_GotFocus_1(object sender, RoutedEventArgs e) {
+            Zip.Text = "";
+        }
+        #endregion of stupidness!
     }
 }
